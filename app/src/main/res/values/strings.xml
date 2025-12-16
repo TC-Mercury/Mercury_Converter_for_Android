@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Mercury Converter</string>
+
+    <string name="hint_link">Paste YouTube Link Here</string>
+    <string name="btn_download">Download MP3</string>
+    <string name="status_ready">Ready - Paste YouTube URL</string>
+
+    <string name="msg_checking_updates">Checking for updates...</string>
+    <string name="msg_engine_updated">✅ Engine Updated!</string>
+    <string name="msg_update_failed">⚠️ Update Failed (Using Old Engine)</string>
+
+    <string name="status_downloading">Downloading...</string>
+    <string name="msg_completed">✓ COMPLETED (MP3)</string>
+    <string name="msg_saved_to">Saved to: </string>
+
+    <string name="error_empty_link">Please paste a link!</string>
+    <string name="error_ffmpeg_not_found">FFmpeg binary not found!</string>
+    <string name="error_conversion_failed">Video Downloaded (Conversion Failed)</string>
+    <string name="error_prefix">Error: </string>
+
+    <string name="init_error">Libraries failed to load</string>
+    <string name="library_init_failed">Library Init Failed!</string>
+
+    <string name="status_converting">Converting...</string>
+</resources>

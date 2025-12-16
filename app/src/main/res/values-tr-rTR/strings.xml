@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mercury Dönüştürücü</string>
+
+    <string name="hint_link">YouTube Linkini Buraya Yapıştır</string>
+    <string name="btn_download">MP3 İndir</string>
+    <string name="status_ready">Hazır - Link Yapıştırın</string>
+
+    <string name="msg_checking_updates">Güncellemeler kontrol ediliyor...</string>
+    <string name="msg_engine_updated">✅ Motor Güncellendi!</string>
+    <string name="msg_update_failed">⚠️ Güncelleme Başarısız (Eski Motor)</string>
+
+    <string name="status_downloading">İndiriliyor...</string>
+
+    <string name="msg_completed">✓ TAMAMLANDI (MP3)</string>
+    <string name="msg_saved_to">Kaydedildi: </string>
+
+    <string name="error_empty_link">Lütfen bir link yapıştırın!</string>
+    <string name="error_ffmpeg_not_found">FFmpeg dosyası bulunamadı!</string>
+    <string name="error_conversion_failed">Video İndi (Çevrilemedi)</string>
+    <string name="error_prefix">Hata: </string>
+
+    <string name="init_error">Kütüphaneler yüklenemedi</string>
+    <string name="library_init_failed">Kütüphane Başlatma Hatası!</string>
+
+    <string name="status_converting">Dönüştürülüyor...</string>
+</resources>
