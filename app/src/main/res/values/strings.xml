@@ -2,6 +2,7 @@
     <string name="app_name">Mercury Converter</string>
 
     <string name="hint_link">Paste YouTube Link Here</string>
+    <string name="hint_up">Paste YouTube Link Below</string>
     <string name="btn_download">Download MP3</string>
     <string name="status_ready">Ready - Paste YouTube URL</string>
     <string name="action_download">Download</string>
