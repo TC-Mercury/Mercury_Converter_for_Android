@@ -28,7 +28,7 @@ It uses **yt-dlp** (Nightly builds) and **FFmpeg** to bypass modern YouTube rest
         <br/><em><b>Ready:</b> Valid YouTube URL entered.</em>
       </td>
       <td align="center">
-        <img width="260" alt="Link Entered (Dark)" src="https://github.com/user-attachments/assets/6987e8cd-0a0b-46a9-bf8b-6c1d52418b6c" />
+        <img width="260" alt="Link Entered (Dark)" src="https://github.com/user-attachments/assets/f72c6e8f-ea04-4a54-99e3-72db96892309" />
         <br/><em><b>Ready:</b> Valid YouTube URL entered.</em>
       </td>
     </tr>
@@ -48,8 +48,18 @@ It uses **yt-dlp** (Nightly builds) and **FFmpeg** to bypass modern YouTube rest
         <br/><em><b>History:</b> Bottom Sheet panel.</em>
       </td>
       <td align="center">
-        <img width="260" alt="Download History (Dark)" src="https://github.com/user-attachments/assets/7321be84-2ed1-4320-9c52-010360b6ebef" />
+        <img width="260" alt="Download History (Dark)" src="https://github.com/user-attachments/assets/87efc015-9257-4206-b110-7ad70e1dfab0" />
         <br/><em><b>History:</b> Bottom Sheet panel.</em>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img width="260" alt="Native Share (Light)" src="https://github.com/user-attachments/assets/8e2c463e-09d0-482b-86c8-f4c50283d436" />
+        <br/><em><b>Integration:</b> Native Android Share Sheet.</em>
+      </td>
+      <td align="center">
+        <img width="260" alt="Native Share (Dark)" src="https://github.com/user-attachments/assets/11702b1b-b572-47ec-ac5c-52a09ea4e2b7" />
+        <br/><em><b>Integration:</b> Native Android Share Sheet.</em>
       </td>
     </tr>
   </tbody>
@@ -57,6 +67,7 @@ It uses **yt-dlp** (Nightly builds) and **FFmpeg** to bypass modern YouTube rest
 
 ##  Features:
 
+* **Native Share Integration:** Send videos directly from the YouTube app (or any browser) to Mercury via Android's native "Share" menu. The app automatically catches the intent, extracts the clean URL using Smart Auto-Paste, and prepares it for download.
 * **MP3 Conversion:** Automatically extracts audio and converts it to high-quality MP3 using a native FFmpeg binary.
 * **Anti-Bot Bypass:** Uses the `_NIGHTLY` update channel and client emulation (`android_testsuite`) to bypass YouTube's latest "PO Token" and bot protections.
 * **Download History:** A local SQLite database securely saves your past downloads. Easily access your history via a sleek, interactive bottom sheet panel.
@@ -73,7 +84,7 @@ It uses **yt-dlp** (Nightly builds) and **FFmpeg** to bypass modern YouTube rest
 
 You can download the latest APK from the Releases page:
 
-[**Download Latest APK (v1.1.2)**](https://github.com/TC-Mercury/MP3_Converter_for_Android/releases/download/v1.1.2/Mercury_Converter.apk)
+[**Download Latest APK (v1.2.0)**](https://github.com/TC-Mercury/MP3_Converter_for_Android/releases/download/v1.2.0/Mercury_Converter.apk)
 
 1.  Download `MercuryConverter.apk`.
 2.  Allow installation from unknown sources.
@@ -85,6 +96,7 @@ You can download the latest APK from the Releases page:
 
 This project solves several complex challenges in Android development:
 
+* **Intent Handling & Regex Extraction:** Integrates deeply with Android's Share Sheet (`ACTION_SEND`) and utilizes custom regex to strip away unnecessary text (like video titles) from shared payloads, ensuring `yt-dlp` receives a 100% clean URL.
 * **Manual FFmpeg Detection:** Implements a custom detective logic to find the `libffmpeg.so` binary across `nativeLibraryDir`, `filesDir`, and `dataDir` to prevent "FFmpeg not found" errors on different Android versions.
 * **Engine Management:** Updates `yt-dlp` to the latest nightly build dynamically.
 * **Scoped Storage:** Compliant with Android 11+ storage policies, writing to the public Downloads collection.
